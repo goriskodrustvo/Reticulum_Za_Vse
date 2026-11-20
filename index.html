@@ -1,0 +1,32 @@
+---
+---
+<!doctype html>
+<html lang="sl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Reticulum: decentralizirana, varna in odporna komunikacijska omrežja za ljudi in skupnosti.">
+  <title>Reticulum: Omrežje prihodnosti, ki pripada ljudem</title>
+  <style>
+    :root { color-scheme: light dark; }
+    body { margin: 0; font-family: system-ui, sans-serif; line-height: 1.7; }
+    main { max-width: 960px; margin: auto; padding: 2rem 1rem 4rem; overflow-wrap: anywhere; }
+    h1, h2 { line-height: 1.25; }
+    h2 { margin-top: 2.5rem; }
+    img { display: block; max-width: 100%; height: auto; border-radius: 8px; }
+    table { display: block; overflow-x: auto; border-collapse: collapse; }
+    th, td { padding: .6rem; border: 1px solid #888; text-align: left; }
+    blockquote { margin-left: 0; padding-left: 1rem; border-left: 4px solid #888; }
+    pre { padding: 1rem; overflow-x: auto; background: #8882; }
+    hr { margin: 2rem 0; border: 0; border-top: 1px solid #8886; }
+    a { color: #0969da; }
+    @media (prefers-color-scheme: dark) { a { color: #79c0ff; } }
+  </style>
+</head>
+<body>
+  <main>
+    {% capture article %}{% include_relative Reticulum_Za_Vse.md %}{% endcapture %}
+    {{ article | markdownify }}
+  </main>
+</body>
+</html>
